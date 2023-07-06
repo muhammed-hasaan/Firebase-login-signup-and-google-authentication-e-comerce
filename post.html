@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src='main.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: sans-serif; */
+        }
+
+        body {
+            background: linear-gradient(to bottom right, red, white, white, blue);
+
+        }
+
+        input {
+            width: 650px;
+            height: 60px;
+            border-radius: 50px;
+            padding-left: 10px;
+            border: 1px solid gray;
+        }
+
+        .inp1 {
+            width: 320px;
+            height: 60px;
+            border-radius: 50px;
+            padding-left: 10px;
+            border: 1px solid gray;
+        }
+
+        .inpdiv {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn1 {
+            width: 300px;
+            background: transparent;
+            height: 60px;
+            font-size: 20px;
+            border: 1px solid gray;
+            border-radius: 50px;
+            color: black;
+            background: linear-gradient(to bottom right, red, white, blue);
+
+            padding-left: 10px;
+        }
+
+        .btn1:hover {
+            width: 300px;
+            background: transparent;
+            height: 60px;
+            font-size: 20px;
+            border: 1px solid gray;
+            border-radius: 50px;
+            color: black;
+            background: linear-gradient(to bottom right, blue, white, red);
+
+            padding-left: 10px;
+        }
+
+        .cont {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        @media (max-width:696px) {
+            input {
+                width: 500px;
+            }
+
+            .inp1 {
+                width: 240px;
+            }
+        }
+
+        @media (max-width:540px) {
+            input {
+                width: 400px;
+            }
+
+            .inp1 {
+                width: 190px;
+            }
+
+            .btn1 {
+                width: 200px;
+            }
+        }
+
+        @media (max-width:426px) {
+            input {
+                width: 330px;
+            }
+
+            .inp1 {
+                width: 155px;
+            }
+
+            .btn1 {
+                width: 170px;
+            }
+        }
+
+        @media (max-width:348px) {
+            input {
+                width: 250px;
+            }
+
+            .inp1 {
+                width: 120px;
+            }
+
+            .btn1 {
+                width: 170px;
+            }
+        }
+    </style>
+
+</head>
+<center>
+    <body">
+        <center>
+
+            <div class="inpdiv">
+                <div class="cont">
+                    <div>
+
+                        <h1><b style="color: red;">P</b>ost <b style="color: red;">Y</b>our <b
+                                style="color: red;">A</b>d</h1>
+                        <br><br><br>
+                        <div style="display: flex;column-gap: 10px;align-items: center; justify-content: center;">
+
+                            <input class="inp1" type="text" id="post-img" placeholder="paste your image link" required>
+                            <br><br>
+                            <input class="inp1" type="text" id="img-head" placeholder="set your post text" required>
+                        </div>
+                        <br><br>
+                        <input type="text" id="img-para" placeholder="set your post price" required>
+                        <br><br>
+                        <button class="btn1 " onclick="Add()"><b style="color: red;">A</b>dd <b
+                                style="color: red;">P</b>ost</button>
+                        <br><br><br>
+                    </div>
+
+                </div>
+            </div>
+        </center>
+       <script src="post.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+        </body>
+
+</html>
